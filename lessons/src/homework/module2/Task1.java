@@ -50,7 +50,7 @@ public class Task1 {
         return result;
     }
 
-    public static int modulusOfLastAndLast(int[] array) {
+    public static int modulusOfFirstAndLast(int[] array) {
         int last = array.length - 1;
         System.out.println(array[0] % array[last]);
         return array[0] % array[last];

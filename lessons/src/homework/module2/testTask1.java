@@ -29,7 +29,7 @@ public class testTask1 {
         assertArrMultiplicationIs(3628800, arr2);
 
         int[] arr3 = {11, 2, 3, 4, 5, 6, 7, 8, 9, 3};
-        assertArrModuludofFirstAndLastIs(2, arr3);
+        assertArrModulusOfFirstAndLastIs(2, arr3);
     }
 
     public static void assertArrSumIs(int expected, int[] arr) {
@@ -52,7 +52,7 @@ public class testTask1 {
         System.out.println("multiplication is " + expected + " " + (expected == multiplication(arr)));
     }
 
-    public static void assertArrModuludofFirstAndLastIs(int expected, int[] arr) {
-        System.out.println("modulusOfLastAndLast is " + expected + " " + (expected == modulusOfLastAndLast(arr)));
+    public static void assertArrModulusOfFirstAndLastIs(int expected, int[] arr) {
+        System.out.println("modulusOfFirstAndLast is " + expected + " " + (expected == modulusOfFirstAndLast(arr)));
     }
 }

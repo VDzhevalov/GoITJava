@@ -1,12 +1,12 @@
 package homework.module2;
 
 
-import static homework.module2.Task1.*;
+import static homework.module2.Task2_1.*;
 
 /**
  * Created by vladimir on 21.08.16.
  */
-public class testTask1 {
+public class testTask2_1 {
 
     public static void main(String[] args) {
 
@@ -30,6 +30,8 @@ public class testTask1 {
 
         int[] arr3 = {11, 2, 3, 4, 5, 6, 7, 8, 9, 3};
         assertArrModulusOfFirstAndLastIs(2, arr3);
+
+        assertArrSecondLargestIs(9,arr3);
     }
 
     public static void assertArrSumIs(int expected, int[] arr) {
@@ -54,5 +56,9 @@ public class testTask1 {
 
     public static void assertArrModulusOfFirstAndLastIs(int expected, int[] arr) {
         System.out.println("modulusOfFirstAndLast is " + expected + " " + (expected == modulusOfFirstAndLast(arr)));
+    }
+
+    public static void assertArrSecondLargestIs(int expected, int[] arr) {
+        System.out.println("secondLargest  is " + expected + " " + (expected == secondLargest(arr)));
     }
 }

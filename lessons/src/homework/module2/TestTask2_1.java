@@ -6,7 +6,7 @@ import static homework.module2.Task2_1.*;
 /**
  * Created by vladimir on 21.08.16.
  */
-public class testTask2_1 {
+public class TestTask2_1 {
 
     public static void main(String[] args) {
 

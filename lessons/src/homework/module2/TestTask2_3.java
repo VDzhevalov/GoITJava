@@ -3,7 +3,7 @@ package homework.module2;
 /**
  * Created by vladimir on 22.08.16.
  */
-public class testTask2_3 {
+public class TestTask2_3 {
 
     public static void main(String[] args) {
 

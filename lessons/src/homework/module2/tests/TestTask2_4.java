@@ -1,4 +1,4 @@
-package homework.module2;
+package homework.module2.tests;
 
 import static homework.module2.Task2_4.printResultNameFundBalance;
 

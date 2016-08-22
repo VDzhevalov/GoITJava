@@ -1,4 +1,6 @@
-package homework.module2;
+package homework.module2.tests;
+
+import homework.module2.Task2_3;
 
 /**
  * Created by vladimir on 22.08.16.

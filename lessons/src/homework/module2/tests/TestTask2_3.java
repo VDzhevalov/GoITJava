@@ -18,5 +18,7 @@ public class TestTask2_3 {
         System.out.println(Task2_3.printResultNameWithdrawBalance("Lane",490));
 
         System.out.println(Task2_3.printResultNameWithdrawBalance("Lane",3100));
+
+        System.out.println(Task2_3.printResultNameWithdrawBalance("Vasya",3100));
     }
 }

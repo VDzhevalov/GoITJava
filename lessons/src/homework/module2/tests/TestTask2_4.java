@@ -18,6 +18,6 @@ public class TestTask2_4 {
 
         System.out.println(printResultNameFundBalance("Lane",490));
 
-        System.out.println(printResultNameFundBalance("Lane",3100));
+        System.out.println(printResultNameFundBalance("Vasya",3100));
     }
 }

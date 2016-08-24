@@ -14,13 +14,13 @@ public class Task2_3 {
     public static double withdrawBalance(String ownerName, double withdrawal) {
 
         int number;
+        double total=withdrawal+withdrawal*commisionRate;
+
         for (number=0; number<ownerNames.length;number++){
             if (ownerName.equals(ownerNames[number]))
-                break;
+                return (balances[number] >= total) ? (balances[number]-total): -1;
         }
-
-        double total=withdrawal+withdrawal*commisionRate;
-        return (balances[number] >= total) ? (balances[number]-total): -1;
+        return -1;
 
         //      or
         //return Task2_2.withdrawBalance(balances[number],withdrawal);

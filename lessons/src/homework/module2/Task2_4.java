@@ -13,9 +13,9 @@ public class Task2_4 {
         int number;
         for (number=0; number<ownerNames.length;number++){
             if (ownerName.equals(ownerNames[number]))
-                break;
+                return balances[number] += fund;;
         }
-        return balances[number] += fund;
+        return -1;
     }
 
     public static String printResultNameFundBalance(String ownerName, double fund){
@@ -25,6 +25,9 @@ public class Task2_4 {
         else
             result = fundBalance (ownerName, 0);
 
+        if (result>=0)
             return ownerName+" "+(int)result;
+        else return ownerName+" mission impossible :) ";
+
     }
 }

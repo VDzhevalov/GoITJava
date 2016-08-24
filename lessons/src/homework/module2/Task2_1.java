@@ -80,7 +80,7 @@ public class Task2_1 {
         return max;
     }
 
-    public static int multiplication(int[] array) {
+    public static long multiplication(int[] array) {
         int result = 1;
         for (int number : array) {
             result *= number;

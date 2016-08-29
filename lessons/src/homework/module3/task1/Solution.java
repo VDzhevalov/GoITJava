@@ -13,5 +13,8 @@ public class Solution {
 
         bird.IAm();
 
+        //or instead IAm()
+        // System.out.println("I am " + bird.getClass().getSimpleName());
+
     }
 }

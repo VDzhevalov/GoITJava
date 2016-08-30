@@ -4,7 +4,8 @@ package homework.module3.task3;
 public class Student {
     private String firstName;
     private String lastName;
-    private int group, age;
+    private int group;
+    int age;
     private Course[] courseTaken;
 
     public Student(String firstName, String lastName, int group){
@@ -15,8 +16,6 @@ public class Student {
 
     public Student(String lastName, Course[] courseTaken){
         this.firstName="";
-        this.group=0;
-        this.age=0;
         this.lastName = lastName;
         this.courseTaken = courseTaken.clone();
     }

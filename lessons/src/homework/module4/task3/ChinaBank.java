@@ -1,0 +1,39 @@
+package homework.module4.task3;
+
+import homework.module4.task2.Currency;
+
+import static homework.module4.task2.Currency.USD;
+
+public class ChinaBank extends Bank{
+
+    public ChinaBank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
+        super(id, bankCountry, currency, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
+    }
+
+    @Override
+    public int getLimitOfWithdrawal(){
+        return (currency.equals(USD))? 100 : 150;
+    }
+
+    @Override
+    public int getLimitOfFunding(){
+        return (currency.equals(USD))? 10000 : 5000;
+    }
+
+    @Override
+    public double getMonthlyRate(){
+        return (currency.equals(USD))? 0.01 : 0.0;
+    }
+
+    @Override
+    public double getCommission(int summ){
+        switch (currency){
+            case USD:
+                return (summ<=1000)? 0.03 : 0.05;
+            case EUR:
+                return (summ<=1000)? 0.1 : 0.11;
+        }
+        return 0;
+    }
+
+}

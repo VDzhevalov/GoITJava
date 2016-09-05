@@ -11,7 +11,7 @@ public class Solution {
 
         bird.sing();
 
-        bird.IAm();
+        //bird.IAm();
 
         //or instead IAm()
         // System.out.println("I am " + bird.getClass().getSimpleName());

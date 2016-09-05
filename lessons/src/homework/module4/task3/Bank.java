@@ -1,4 +1,6 @@
-package homework.module4.task1;
+package homework.module4.task3;
+
+import homework.module4.task2.Currency;
 
 public abstract class Bank {
 
@@ -12,8 +14,8 @@ public abstract class Bank {
 
     public abstract int getLimitOfWithdrawal();
     public abstract int getLimitOfFunding();
-    public abstract int getMonthlyRate();
-    public abstract int getCommission();
+    public abstract double getMonthlyRate();
+    public abstract double getCommission(int summ);
 
 
     public Bank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {

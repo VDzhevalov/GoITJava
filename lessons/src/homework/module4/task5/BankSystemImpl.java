@@ -10,7 +10,7 @@ public class BankSystemImpl implements BankSystem{
     public void withdrawOfUser(User user, int amount){
         System.out.println(user);
         System.out.println("withdraw " + amount);
-    };
+    }
 
     @Override
     public void fundUser(User user, int amount) {

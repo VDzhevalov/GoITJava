@@ -1,12 +1,8 @@
-package homework.module4.task3;
+package homework.module4.tasks1_6;
 
-import homework.module4.task2.Currency;
+public class EUBank extends Bank {
 
-import static homework.module4.task2.Currency.USD;
-
-public class ChinaBank extends Bank{
-
-    public ChinaBank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
+    public EUBank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
         super(id, bankCountry, currency, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
     }
 
@@ -14,9 +10,9 @@ public class ChinaBank extends Bank{
     public int getLimitOfWithdrawal(){
         switch (currency) {
             case USD:
-                return 100;
+                return 2000;
             case EUR:
-                return 150;
+                return 2200;
         }
         return -1;
     }
@@ -25,7 +21,7 @@ public class ChinaBank extends Bank{
     public int getLimitOfFunding(){
         switch (currency) {
             case EUR:
-                return  5000;
+                return  20000;
             case USD:
                 return 10000;
         }
@@ -36,9 +32,9 @@ public class ChinaBank extends Bank{
     public double getMonthlyRate(){
         switch (currency) {
             case USD:
-                return 0.01;
+                return 0.00;
             case EUR:
-                return 0.0;
+                return 0.001;
         }
         return 0;
     }
@@ -47,9 +43,9 @@ public class ChinaBank extends Bank{
     public double getCommission(int summ){
         switch (currency){
             case USD:
-                return (summ<=1000)? 0.03 : 0.05;
+                return (summ<=1000)? 0.05 : 0.07;
             case EUR:
-                return (summ<=1000)? 0.1 : 0.11;
+                return (summ<=1000)? 0.02 : 0.04;
         }
         return 0;
     }

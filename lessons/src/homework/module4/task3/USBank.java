@@ -11,17 +11,35 @@ public class USBank extends Bank {
 
     @Override
     public int getLimitOfWithdrawal(){
-        return (currency.equals(USD))? 1000 : 1200;
+        switch (currency) {
+            case USD:
+                return 1000;
+            case EUR:
+                return 1200;
+        }
+        return -1;
     }
 
     @Override
     public int getLimitOfFunding(){
-        return (currency.equals(USD))? -1 : 10000;
+        switch (currency) {
+            case EUR:
+                return  10000;
+            case USD:
+                break;
+        }
+        return -1;
     }
 
     @Override
     public double getMonthlyRate(){
-        return (currency.equals(USD))? 0.01 : 0.015;
+        switch (currency) {
+            case USD:
+                return 0.01;
+            case EUR:
+                return 0.015;
+        }
+        return 0;
     }
 
     @Override

@@ -1,8 +1,9 @@
-package homework.module4.task6;
+package homework.module4.tasks1_6;
 
-import static homework.module4.task2.Currency.USD;
 
-public class BankSystemImpl implements BankSystem{
+import static homework.module4.tasks1_6.Currency.USD;
+
+public class BankSystemImpl implements BankSystem {
 
     @Override
     public void withdrawOfUser(User user, int amount){

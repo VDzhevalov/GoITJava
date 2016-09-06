@@ -1,10 +1,6 @@
-package homework.module4.task3;
+package homework.module4.tasks1_6;
 
-import homework.module4.task2.Currency;
-
-import static homework.module4.task2.Currency.USD;
-
-public class ChinaBank extends Bank{
+public class ChinaBank extends Bank {
 
     public ChinaBank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
         super(id, bankCountry, currency, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);

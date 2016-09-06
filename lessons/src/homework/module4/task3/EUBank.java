@@ -11,17 +11,35 @@ public class EUBank extends Bank {
 
     @Override
     public int getLimitOfWithdrawal(){
-        return (currency.equals(USD))? 2000 : 2200;
+        switch (currency) {
+            case USD:
+                return 2000;
+            case EUR:
+                return 2200;
+        }
+        return -1;
     }
 
     @Override
     public int getLimitOfFunding(){
-        return (currency.equals(USD))? 10000 : 20000;
+        switch (currency) {
+            case EUR:
+                return  20000;
+            case USD:
+                return 10000;
+        }
+        return -1;
     }
 
     @Override
     public double getMonthlyRate(){
-        return (currency.equals(USD))? 0.0 : 0.01;
+        switch (currency) {
+            case USD:
+                return 0.00;
+            case EUR:
+                return 0.001;
+        }
+        return 0;
     }
 
     @Override
